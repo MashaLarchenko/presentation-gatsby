@@ -1,0 +1,42 @@
+Why Gatsby?
+ 1. It is reaaly fast.
+Gatsby sites are 2-3 times faster than similar types of sites. The framework takes care of performance on its own, leaving you with the pleasure of working on something more fun. All you have to do is to create the source code, and Gatsby.js will then compile the most performant Webpack configuration to build your site. Additionally, it prefetches resources so clicking through your
+pages feels excitingly fast.
+
+we’re gonna have huge security gains when we work with Gatsby
+There isn’t a live database to hack or access. There is not user data that is going to be stored on the server with the Gatsby site. So even if somebody were to be able to hack the server itself they’re still only going to get access to HTML files and will be able to do far less damage than they could if they were getting access to for example a WordPress site or had access to the user data or purchasers credit card information and all that kind of stuff
+2. Based on popular and influential technology
+ Has a Rich Plugin Ecosystem
+
+
+There are many ways to build a website. If you’re considering Gatsby, you may also be looking at some alternatives:
+
+JAMstack frameworks such as Jekyll, Next.js, and Nuxt.js let you put text or markdown in a specific directory such as pages/ in a version-controlled codebase. They then build a specific kind of site, usually a blog, as HTML files from the content you’ve added. These files can be cached and served from a CDN.
+Coming from the JAMstack world?
+
+Compare Gatsby vs JAMstack
+Traditional content management systems (CMSs) like WordPress and Drupal give you an online text editor to create content. You customize the look and feel by choosing themes and plugins or by writing custom PHP or JavaScript code. Content is saved in a database, which is retrieved and sent to users when they visit the website. Depending on your requirements you can self-host your website or use an official hosting provider.
+Coming from the CMS world?
+
+The chart below details Gatsby’s capabilities in comparison with a representative from each category
+
+
+
+
+
+
+3. Starters & templates
+There are a sufficient amount of GatsbyJs Starter repositories and templates that is as simple as cloning and changing the content of them. In this way you can completely develop websites like your Blog, super quick and efficient. The documentation is super friendly, and I would definitely recommend you starting from there if you want to learn Gatsby.
+
+Starters
+These are basically boilerplate Gatsby sites which help you kick-start development quickly depending on what kind of site it is. They help you directly get onto working on the development of a site, configuration and basic features you need already taken care of. Which means, less time on the tooling, more time for development.
+
+Gatsby plugins often have their corresponding starters which show or serve a quick way to get started with using it. They also act as a reference covering all the features and showcase configurations of the plugin in use.
+
+
+Static Sites
+Firstly, let’s take a look at how Gatsby works internally. Unlike the SPAs that make API requests as you run the app, Gatsby does all the data fetching, including data sourcing from local files, during build time. All this data is then used to generate static HTML, JavaScript, and CSS files. This static rendering is what makes things work faster.
+
+
+GraphQL is a query language (the QL part of its name). If you’re familiar with SQL, it works in a very similar way. Using a special syntax, you describe the data you want in your component and then that data is given to you.
+Gatsby uses GraphQL at build-time and not for live sites. This is unique, and it means you don’t need to run additional services (e.g. a database and Node.js service) to use GraphQL for production websites.

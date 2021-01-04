@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Gatsby js </h1>
+				<h4>Maria Larchenko</h4>
+			</section>
+			<section>GatsbyJS is a React-based, GraphQL powered, static site generator</section>
+
+			<section>
+				<h2>How Gatsby works</h2>
+				<img src='./assets/howworks.png'>
+
+			</section>
+			<section>
+				<h5>GraphQL is a query language (the QL part of its name).</h5>
+				<section>
+					<div class="slide__divided">
+						<div>
+							<p>GraphQL lets you ask for the exact data you need. Queries look like JSON:</p>
+								<pre><code data-trim data-noescape>
+								 {   
+									site {
+										siteMetadata {
+											title 
+										}
+									 }
+								}
+						    </code></pre>
+						</div>
+						<div>
+							<p>Which returns this:</p>
+							<pre><code data-trim data-noescape>
+					  				 {
+	  									"site": {
+											"siteMetadata": {
+		 										 "title": "A Gatsby site!"
+												}
+	  										 }
+									 }
+							</code></pre>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p style="font-size: 15px;">To View GraphiQL, an in-browser IDE, to explore your site's data and
+						schema go to
+						http://localhost:8000/___graphql</p>
+					<img src="./assets/graphgl.PNG">
+
+				</section>
+
+
+			</section>
+			<section>
+				<h2>Getting started with Gatsby</h2>
+				<section>
+					<ul>
+						<li>
+							<h5 class="list__title">Install the Gatsby CLI (command line interface).</h5>
+							<pre><code data-trim data-noescape>
+								npm install -g gatsby-cli
+						</code></pre>
+						</li>
+						<li class="fragment fade-up">
+							<h5 class="list__title">Create a new site</h5>
+							<pre><code data-trim data-noescape>
+						npm init gatsby
+						</code></pre>
+						</li>
+						<li class="fragment fade-up">
+							<h5 class="list__title"> Change into the working directory:
+							</h5>
+							<pre><code data-trim data-noescape>
+								cd hello-world
+
+						</code></pre>
+						</li>
+						<li class="fragment fade-up">
+							<h5 class="list__title"> Start the development mode:
+							</h5>
+							<pre><code data-trim data-noescape>
+								gatsby develop
+						</code></pre>
+						</li>
+					</ul>
+				</section>
+
+			</section>
+			<section>
+				<h5>
+					Starters & templates
+				</h5>
+				<section>
+					<h5 class="list__title">When creating a new Gatsby site, you can use the following command structure
+						to create a new site based on any existing Gatsby starter</h5>
+					<pre><code data-trim data-noescape>
+					gatsby new [SITE_DIRECTORY_NAME] [URL_OF_STARTER_GITHUB_REPO]
+			</code></pre>
+				</section>
+
+				<section>
+					<img src="./assets/starters.PNG">
+					<a href="https://www.gatsbyjs.com/starters/?">See all Gatsby starters</a>
+				</section>
+			</section>
+			<section>
+				<h5>
+					Plugins
+				</h5>
+				<p style="font-size: 1.5rem;">
+					Gatsby was built to be extensible and flexible — using plugins is one way to make it so. They can be
+					directly installed and be used for a variety of functionality including making the site offline,
+					adding Google analytics, adding support for inline SVGs, you name it — the list is almost endless.
+				</p>
+				<a href="https://www.gatsbyjs.com/plugins" style="font-size: 1rem;"> Go to see all availible plaguns to
+					Gatsby plugin library</a>
+			</section>
+			<section>
+				<h2> Why Gatsby? </h2>
+				<section>
+					<ul>
+						<li class="fragment fade-up"> It is really fast.</li>
+						<li class="fragment fade-up"> Huge security gains when we work with Gatsby</li>
+						<li class="fragment fade-up">Based on popular and influential technology</li>
+						<li class="fragment fade-up">Has a Rich Plugin Ecosystem</li>
+						<li class="fragment fade-up">Has a stable and growing community of developers and plug-in
+							authors</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h2>
+					Thank you for watcing
+				</h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
